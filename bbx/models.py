@@ -17,7 +17,7 @@ class bbx_info(models.Model):
     note_number_1 = models.CharField(max_length=10, verbose_name=u'收费单编号1',blank=True)
     note_number_2 = models.CharField(max_length=10, verbose_name=u'收费单编号2',blank=True)
     note_number_3 = models.CharField(max_length=10, verbose_name=u'收费单编号3',blank=True)
-    description = models.TextField(verbose_name = u'问题描述', blank= True)
+    description = models.TextField(verbose_name = u'工作描述', blank= True)
     man_hour = models.DecimalField(max_digits=4, decimal_places=1,verbose_name = u'工时', blank= True)
     ground_equipment = models.TextField(verbose_name=u'地面设备', blank=True)
     oil = models.DecimalField(max_digits=4, decimal_places=1,verbose_name = u'滑油', blank= True)
